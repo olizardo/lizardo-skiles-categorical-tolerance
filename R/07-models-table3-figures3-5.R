@@ -102,11 +102,10 @@ pois_s <- function(lam, lo, hi) {
   (1 - ppois(k - 1, lam)) - (1 - ppois(hi, lam))
 }
 pois_s_grad <- function(lam, lo, hi) {
-  # d/dlam of the sum above
+  # d/dlam of the sum above, vectorized over lam
   k <- max(lo, 1):hi
-  if (!length(k)) return(0)
-  pm <- dpois(k, lam)
-  sum((k / lam - 1) * pm)
+  if (!length(k)) return(rep(0, length(lam)))
+  sapply(lam, function(l) sum((k / l - 1) * dpois(k, l)))
 }
 
 # Point prediction and delta-method SE for P(Y = 0) or P(lo <= Y <= hi)
