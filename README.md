@@ -1,8 +1,34 @@
-# Replication: "The Refusal to Dislike: Americans' Cultural Tolerance in Two National Surveys"
+# Replication: "The End of Symbolic Exclusion? The Rise of 'Categorical Tolerance' in the Musical Tastes of Americans: 1993–2012"
 
 Open-source R reproduction of the figures and tables in Lizardo & Skiles,
-*Social Sciences* 3: 85–108, originally estimated in Stata (the original
+*Sociological Science* 3: 85–108, originally estimated in Stata (the original
 `.do` files are preserved in `original-stata/` for provenance).
+
+## Citations
+
+Original publication:
+
+> Lizardo, Omar, and Sara Skiles. 2016. "The End of Symbolic Exclusion? The
+> Rise of 'Categorical Tolerance' in the Musical Tastes of Americans:
+> 1993–2012." *Sociological Science* 3: 85–108.
+> https://doi.org/10.15195/v3.a5
+
+Data:
+
+> Lizardo, Omar, and Sara Skiles. 2012. *Survey Sample International (SSI)
+> Cultural Tastes Survey* [Dataset]. Distributed by GitHub at
+> https://github.com/olizardo/SSI-2012. CC BY 4.0.
+> Documentation: https://olizardo.github.io/SSI-2012/
+
+> Smith, Tom W., Michael Davern, Jeremy Freese, and Michael Hout. *General
+> Social Surveys, 1972–2022: Cumulative Codebook / Data File*. Chicago: NORC
+> at the University of Chicago. [Producer and distributor of the 1993 data.]
+> Accessed in R via the `gssr` package.
+
+Software:
+
+> Healy, Kieran. *gssr: General Social Survey Data*. R package.
+> https://github.com/kjhealy/gssr.
 
 ## Outputs reproduced
 
