@@ -6,3 +6,4 @@ data/
 .Rhistory
 .RData
 *.DS_Store
+AGENTS.md
