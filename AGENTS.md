@@ -49,11 +49,16 @@ Reproduction repo for Lizardo & Skiles, "refusal to dislike" paper
   dummies only (do-file drops age*/degree*), inflate panel blue, count panel red.
 
 ## Status (2026-11-13)
-- 01–06 run clean; Figures 1–2 and Tables 1–2 produced.
-- 07 (Table 3, Figures 3–5) fits all models but still errors near the end:
-  "Error in taste_names : The pipe operator requires a function call as RHS"
-  — a stray pipe after the d_ssi block needs fixing; figures 3–5 warnings show
-  some points dropped (scale ranges) to review.
+- Complete: 01–07 all run clean; Figures 1–5 and Tables 1–3 produced in
+  output/. Figures validated visually against the published PNGs.
+- Key bugs fixed in 07: missing exp() of the count-model linear predictor in
+  predict_zip; pois_s_grad not vectorized (broke Figure 4 CIs); margins
+  averaging must be within year (and year x black for Figure 3) subsamples;
+  fig5 degree dummies follow Stata tab,g() convention (degree2..5 = degree
+  values 1..4, baseline <HS); fig5 uses I(agemid^2/100) for optimizer stability
+  (race coefficients unaffected).
+- Repo pushed to https://github.com/olizardo/lizardo-skiles-categorical-tolerance
+  (public, main branch).
 
 ## Conventions
 - Install R packages only via `Rscript --no-save --no-restore -e
