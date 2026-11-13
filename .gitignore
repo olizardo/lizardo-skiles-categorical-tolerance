@@ -1,0 +1,8 @@
+# data (fetched by R/01-download-data.R and built by the pipeline)
+data-raw/
+data/
+
+# originals kept for provenance are committed; ignore editor cruft
+.Rhistory
+.RData
+*.DS_Store

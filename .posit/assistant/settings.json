@@ -1,0 +1,23 @@
+{
+  "permission": {
+    "bash": {
+      "cd *": "allow",
+      "git status *": "allow",
+      "head *": "allow",
+      "echo *": "allow",
+      "gh auth status *": "allow",
+      "unzip *": "allow",
+      "find *": "allow",
+      "pdftotext *": "allow",
+      "wc *": "allow"
+    },
+    "webfetch": {
+      "https://olizardo.github.io/*": "allow"
+    },
+    "edit": {
+      "*.R": "allow",
+      "*.md": "allow",
+      "*/.gitignore": "allow"
+    }
+  }
+}
