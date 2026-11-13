@@ -197,7 +197,7 @@ p3 <- ggplot(grid3, aes(year, est, color = black, group = black)) +
   theme_minimal() +
   theme(legend.position = "top")
 
-ggsave("output/figures/Figure3.png", p3, width = 6.5, height = 3, dpi = 200)
+ggsave("output/figures/Figure3.png", p3, width = 5, height = 5, dpi = 200)
 
 # ------------------------------------------------------------------ Figure 4 --
 dat4 <- merged |>
