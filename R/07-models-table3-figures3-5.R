@@ -231,7 +231,7 @@ p4 <- ggplot(grid4, aes(cohortrec4, est, color = year, group = year)) +
   theme_minimal() +
   theme(legend.position = "top")
 
-ggsave("output/figures/Figure4.png", p4, width = 6.5, height = 6, dpi = 200)
+ggsave("output/figures/Figure4.png", p4, width = 5, height = 8, dpi = 200)
 
 # ------------------------------------------------------------------ Figure 5 --
 # zip numdislikes c.agemid##c.agemid race1-race6 degree2-5,
